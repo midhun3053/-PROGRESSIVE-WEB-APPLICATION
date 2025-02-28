@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="ShopEase - An e-commerce PWA that works offline">
+  <meta name="theme-color" content="#f97316">
+  <title>ShopEase - E-Commerce PWA</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="manifest" href="manifest.json">
+  <link rel="icon" href="images/icons/icon-192x192.png">
+  <link rel="apple-touch-icon" href="images/icons/icon-192x192.png">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+</head>
+<body>
+  <header class="header">
+    <div class="container header-container">
+      <div class="logo">
+        <a href="index.html">ShopEase</a>
+      </div>
+      <nav class="main-nav">
+        <button class="menu-toggle" aria-label="Toggle menu">
+          <span class="menu-icon"></span>
+        </button>
+        <ul class="nav-list">
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="header-actions">
+        <button class="theme-toggle" aria-label="Toggle theme">
+          <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+          <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+        </button>
+        <a href="cart.html" class="cart-link">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg>
+          <span class="cart-count">0</span>
+        </a>
+      </div>
+    </div>
+    <div class="offline-indicator">You are currently offline. Some features may be limited.</div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="container">
+        <div class="hero-content">
+          <div class="hero-text">
+            <div class="badge">Progressive Web App</div>
+            <h1>Shop Anytime, Anywhere, Even Offline</h1>
+            <p>Experience the future of e-commerce with our Progressive Web App. Shop seamlessly, even when you're offline.</p>
+            <div class="hero-buttons">
+              <a href="products.html" class="btn btn-primary">
+                Shop Now
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+              </a>
+              <a href="#features" class="btn btn-outline">Learn More</a>
+            </div>
+          </div>
+          <div class="hero-image">
+            <img src="https://via.placeholder.com/600x400" alt="Hero Image" width="600" height="400">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features" id="features">
+      <div class="container">
+        <div class="section-header">
+          <div class="badge">Features</div>
+          <h2>Why Choose Our PWA?</h2>
+          <p>Our Progressive Web App offers a seamless shopping experience with these powerful features.</p>
+        </div>
+        <div class="features-grid">
+          <div class="feature-card">
+            <div class="feature-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.55a11 11 0 0 1 14.08 0"></path><path d="M1.42 9a16 16 0 0 1 21.16 0"></path><path d="M8.53 16.11a6 6 0 0 1 6.95 0"></path><line x1="12" y1="20" x2="12.01" y2="20"></line></svg>
+            </div>
+            <h3>Works Offline</h3>
+            <p>Continue browsing products and shopping even when you're offline or have a poor connection.</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"></path><path d="M13.73 21a2 2 0 0 1-3.46 0"></path></svg>
+            </div>
+            <h3>Push Notifications</h3>
+            <p>Stay updated with the latest deals, order status, and personalized recommendations.</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></svg>
+            </div>
+            <h3>Fast & Responsive</h3>
+            <p>Enjoy a lightning-fast, responsive shopping experience on any device, anywhere.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Products Section -->
+    <section class="products featured-products">
+      <div class="container">
+        <div class="section-header">
+          <h2>Featured Products</h2>
+          <p>Check out our most popular items, available even when you're offline.</p>
+        </div>
+        <div class="products-grid" id="featured-products">
+          <!-- Products will be loaded dynamically via JavaScript -->
+          <div class="loading-spinner">
+            <div class="spinner"></div>
+            <p>Loading products...</p>
+          </div>
+        </div>
+        <div class="products-action">
+          <a href="products.html" class="btn btn-primary">
+            View All Products
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path><line x1="3" y1="6" x2="21" y2="6"></line><path d="M16 10a4 4 0 0 1-8 0"></path></svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+      <div class="container">
+        <div class="cta-content">
+          <div class="cta-image">
+            <img src="https://via.placeholder.com/600x400" alt="App Installation" width="600" height="400">
+          </div>
+          <div class="cta-text">
+            <h2>Install Our App</h2>
+            <p>Add our PWA to your home screen for a native app-like experience. No app store required!</p>
+            <div class="cta-steps">
+              <div class="cta-step">
+                <div class="step-number">1</div>
+                <p>Click the "Add to Home Screen" button in your browser menu</p>
+              </div>
+              <div class="cta-step">
+                <div class="step-number">2</div>
+                <p>Confirm the installation when prompted</p>
+              </div>
+              <div class="cta-step">
+                <div class="step-number">3</div>
+                <p>Access the app directly from your home screen</p>
+              </div>
+            </div>
+            <button id="install-button" class="btn btn-primary install-button">
+              Install App
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <h3>ShopEase</h3>
+          <p>Your one-stop shop for all your needs, now with offline capabilities.</p>
+        </div>
+        <div class="footer-col">
+          <h3>Shop</h3>
+          <ul>
+            <li><a href="products.html">All Products</a></li>
+            <li><a href="products.html?category=Electronics">Electronics</a></li>
+            <li><a href="products.html?category=Accessories">Accessories</a></li>
+            <li><a href="products.html?category=Home">Home</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h3>Company</h3>
+          <ul>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Service</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h3>Connect</h3>
+          <ul>
+            <li><a href="https://twitter.com" target="_blank" rel="noopener noreferrer">Twitter</a></li>
+            <li><a href="https://instagram.com" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+            <li><a href="https://facebook.com" target="_blank" rel="noopener noreferrer">Facebook</a></li>
+            <li><a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; <span id="current-year"></span> ShopEase. All rights reserved.</p>
+        <p>This is a Progressive Web App (PWA) that works offline and supports push notifications.</p>
+      </div>
+    </div>
+  </footer>
+
+  <div class="toast-container"></div>
+
+  <script src="js/app.js"></script>
+  <script src="js/products.js"></script>
+  <script>
+    // Register service worker
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', function() {
+        navigator.serviceWorker.register('/service-worker.js')
+          .then(function(registration) {
+            console.log('Service Worker registered with scope:', registration.scope);
+          })
+          .catch(function(error) {
+            console.log('Service Worker registration failed:', error);
+          });
+      });
+    }
+
+    // Set current year in footer
+    document.getElementById('current-year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
+
